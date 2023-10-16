@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "/images/main-icon128.png",
+         "16": "/images/main-icon16.png",
+         "32": "/images/main-icon32.png",
+         "48": "/images/main-icon48.png"
+      },
+      "default_popup": "/dist/popup.index.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "dist/content.bundle.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "AI translator for raw manga",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "/images/main-icon128.png",
+      "16": "/images/main-icon16.png",
+      "32": "/images/main-icon32.png",
+      "48": "/images/main-icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiJXyGIGd2Go3pxfNsxm/LYIbg3oKM0CS2GJJl9yFGJTHeydbdW7a53YmXNLHAwi5lom7MNE9u4gdApqC20B8CIehAMFcrDonvZ7yPGTf3F0FTIXU3q4srQzUcsSGi+JBjgOuFrSLa1Er0du5VpdCp7hVeLymNyPDBkO+tTvkbEaY4Nv/S+KZwfzdISIUg1FV5Ab9Wpj02ntm9/V/B93fue0u7CQ8f7XLt26Gwwz4gmwKWkYy/nJbfFWvQ6Wtnuwxlxpi22h8/givgBkOAo+/dm+ryxwaomFUsup/chHOl7cfbKIkXK+EKhEHVFwSnjcFA3RFoT0FbZ2O0T8ZMCBPfQIDAQAB",
+   "manifest_version": 3,
+   "name": "Manga Translator",
+   "oauth2": {
+      "client_id": "849862836112-r9nk32aai0n9mjeqtn50c14ao9pakltk.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ]
+   },
+   "permissions": [ "storage", "identity", "activeTab" ],
+   "version": "0.0.2.27"
+}
